@@ -1,0 +1,66 @@
+.my-offers-created {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .my-offers-created h2 {
+    text-align: center;
+    color: #333;
+    width: 100%;
+  }
+  
+  .my-offers-created .offer-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    margin-bottom: 1rem;
+    width: 300px;
+    min-height: 400px;
+    transition: transform .2s;
+    flex: 0 0 auto;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .my-offers-created .offer-card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+  
+  .my-offers-created h3 {
+    font-size: 1.2em;
+    color: #666;
+  }
+  .my-offers-created p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .my-offers-created .offer-card input[type="text"],
+  .my-offers-created .offer-card textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+  }
+  
+  .my-offers-created .offer-card button {
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .my-offers-created .offer-card button:hover {
+    background-color: #0056b3;
+  }
+  

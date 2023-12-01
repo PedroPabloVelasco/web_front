@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color:#f8f3f3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    color: #dc374e;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    background: #f5616b; /* Color de fondo de tu paleta */
+    text-decoration: none;
+    color: #ffffff; /* Texto en color blanco para contraste */
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem; /* Tamaño más grande del texto */
+    padding: 10px 20px; /* Aumenta el espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados para una apariencia suave */
+    display: inline-block; /* Permite aplicar padding y otros espacios */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+    margin: 0 10px; /* Añade un poco de margen a cada lado */
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #f5616b;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+.navbar ul li:hover a {
+    background-color: #fa8981; /* Cambia el color al pasar el ratón */
+}
+
+.nav-logo {
+    height: 100px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.nav-title {
+    color: #dc374e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-left: 550px;
+}
+
+.auth-button {
+    text-decoration: none;
+    color: #dc374e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+.auth-button:hover {
+    background-color: #f5616b; /* Color de realce al pasar el mouse sobre botones de autenticación */
+    color: #fff; /* Texto blanco para contraste */
+    padding: 10px 20px; /* Espaciado adicional para hacer el botón más prominente */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+}
+
+
+@keyframes rotateLogo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating {
+    animation: rotateLogo 0.5s linear;
+  }

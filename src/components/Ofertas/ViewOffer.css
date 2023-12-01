@@ -1,0 +1,37 @@
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-around; /* Distribuye las tarjetas de manera uniforme */
+    background: url('fondo3.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.offer-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px; /* Borde redondeado para un aspecto de tarjeta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Sombra para dar profundidad */
+    padding: 20px;
+    margin-bottom: 1rem;
+    width: 300px; /* Ancho de la tarjeta */
+    min-height: 400px; /* Altura mínima de la tarjeta */
+    transition: transform .2s; /* Animación al pasar el mouse */
+    flex: 0 0 auto; /* Asegura que las tarjetas no se estiren */
+    margin: 1em; /* Agrega un poco de espacio alrededor de las tarjetas */
+}
+
+.offer-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.offer-description,
+.offer-company,
+.offer-location,
+.offer-salary {
+    font-size: 1.2em;
+    color: #666;
+}

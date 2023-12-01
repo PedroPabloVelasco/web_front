@@ -1,0 +1,206 @@
+:root {
+    --color-primary: #E44D26; 
+    --color-secondary: #F16529;
+    --color-background: #FFFFFF;
+    --color-text: #333333;
+    --color-accent: rgb(241, 241, 241);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--color-background);
+    background-image: url('fondo3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: var(--color-text);
+}
+
+.navigation {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 75px;
+}
+
+.featured-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: -450px;
+}
+
+.featured-image {
+    max-width: 30% !important;
+    height: auto;
+    margin: 20px auto 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: var(--color-primary);
+    padding: 20px 0;
+    margin-top: -750px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Cambiado de start a flex-start */
+    padding: 20px;
+    margin-top: -20;
+}
+
+.opinion-box {
+    /* Tus estilos existentes para opinion-box... */
+    flex: 1; /* Permite que ocupe el espacio disponible */
+    margin-right: 10px; /* Espacio entre las secciones */
+}
+
+.opinion-text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opinion-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+}
+
+.opinion-text {
+    margin: 0;
+    font-size: 40px;
+}
+
+.next-opinion-button {
+    cursor: pointer;
+    font-size: 10px;
+    width: 300px;
+    height: 200px;
+    order: 2; /* Cambiamos el orden para next-opinion-button */
+}
+
+.opinion-images-container {
+    display: flex; /* O cualquier otro layout que prefieras, como grid */
+    flex-direction: line; /* Alinea las imágenes verticalmente */
+    justify-content: space-between; /* Añade espacio uniformemente entre las imágenes */
+    margin-left: 0px;
+    height: 100%;
+    align-items: center;
+  }
+
+.opinion-box button {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.opinion-container {
+    display: flex;
+    align-items: center; /* Asegura que los elementos estén alineados verticalmente en el centro */
+    justify-content: flex-end;
+}
+
+.opinion-right-image { /* Esto modifica las imegenes entre si*/
+    width: 300px; /* O un tamaño específico */
+    height: auto; /* Ajusta según tus necesidades */
+    margin-bottom: -35px; /* Aumenta el espacio entre imágenes */
+    margin-left: -0px;
+}
+
+.team-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.team-section {
+    /* Tus estilos existentes para team-section... */
+    flex: 1 0 auto; /* Permite que ocupe el espacio disponible */
+    /*text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 1350px;
+    margin-top: -20px; /* Espacio entre las secciones */
+}
+
+.team-members {
+    display: flex;
+    justify-content: right;
+    gap: 300px;
+}
+
+.team-image {
+    width: 150px; /* Aumentado de 100px */
+    height: 150px; /* Aumentado de 100px */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid var(--color-primary);
+}
+
+.image-with-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: inline-block;
+    align-items: center; /* Centra la imagen y el nombre en la dirección vertical */
+    margin-bottom: 0px; /* Espacio entre los bloques de imagen y nombre */
+    margin-left: -5px;
+    justify-content: center;
+  }
+  .member-name {
+    margin-top: 0px; /* Espacio entre la imagen y el nombre */
+    font-size: 40px;
+    margin: 0 auto; /* Centra el elemento con respecto a los lados */
+    padding: 0;
+    margin-left: 0px;
+    text-align: center;
+    color: var(--color-text); /* Color del texto, cambia según tu esquema de colores */
+    /* Puedes agregar más estilos según tu diseño */
+  }
+
+.team-title {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 325px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* Asegúrate de que el título no exceda el ancho de las imágenes y nombres */
+    width: max-content; /* Esto hace que el fondo del título solo sea tan ancho como el contenido */
+    align-self: center; /* Si el contenedor padre es flex, esto centrará el título */
+  }
+
+  .opinions-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    align-self: center;
+    margin-left: 60px;
+  }

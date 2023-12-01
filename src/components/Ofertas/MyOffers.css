@@ -1,0 +1,52 @@
+.my-offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem;
+ /* Color de fondo acorde a la temática */
+}
+
+.my-offers h2 {
+  text-align: center;
+  color: #dc374e; /* Color acorde a la temática */
+  width: 100%;
+  font-size: 3.5rem; /* Título más grande */
+  font-family: 'Raleway', sans-serif; /* Tipografía acorde a otros títulos */
+}
+
+.my-offers .offer-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 1.5rem;
+  margin: 1rem;
+  width: calc(33.333% - 2rem); /* Tres tarjetas por fila con espaciado */
+  min-height: 250px; /* Altura ajustada */
+  transition: transform .2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribución uniforme del contenido */
+}
+
+.my-offers .offer-card:hover {
+  transform: scale(1.05);
+}
+
+.my-offers h3,
+.my-offers p {
+  color: #666;
+  margin: 0.5rem 0; /* Espaciado uniforme */
+}
+
+.my-offers h3 {
+  font-size: 2em; /* Tamaño más grande para los subtítulos */
+}
+
+.my-offers p {
+  font-size: 1.5em; /* Tamaño adecuado para el contenido */
+}
+

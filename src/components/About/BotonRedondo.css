@@ -1,0 +1,19 @@
+.boton-redondo {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    background-color: #25CA41; 
+    color: #fff; 
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+    outline: none; 
+    position: relative;
+    top: 110px; 
+    left: 85px; 
+  }
+  
+  .boton-redondo:hover {
+    background-color: #00FF2C; 
+  }
+  

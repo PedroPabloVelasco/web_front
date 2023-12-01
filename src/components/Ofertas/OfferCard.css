@@ -1,0 +1,76 @@
+.offer-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+  
+.offer-card {
+  background-color: #1e1e1e; /* Color oscuro para simular una pantalla de teléfono */
+  border-radius: 45px; /* Aumenta proporcionalmente para bordes redondeados */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19), 0 9px 9px rgba(0, 0, 0, 0.23);
+  padding: 30px; /* Aumenta el padding */
+  width: 450px; /* Aumenta el ancho */
+  min-height: 900px; /* Aumenta la altura mínima */
+  position: relative;
+  overflow: hidden;
+  color: #f8f3f3; /* Color claro para el texto */
+  font-family: 'Arial', sans-serif; /* Cambia a la fuente que prefieras */
+}
+  
+.offer-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; /* Usa todo el espacio vertical disponible */
+  padding: 90px 30px; /* Ajusta el padding */
+}
+  
+.offer-title,
+.offer-description,
+.offer-company,
+.offer-location,
+.offer-salary {
+  font-size: 1.8em; /* Aumenta el tamaño de fuente */
+  color: #e4dee4;
+  margin: 30px 0; /* Aumenta el margen */
+}
+
+.offer-title {
+  font-size: 3em; /* Aumenta el tamaño de fuente para el título */
+  color: #f5616b;
+  font-weight: bold;
+}
+
+.action-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5em; /* Aumenta el tamaño de fuente para el mensaje de acción */
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 10s ease-in-out;
+  z-index: 1; /* Asegúrate de que el mensaje se muestre en la parte superior */
+}
+  
+.action-message.like {
+  color: limegreen;
+}
+  
+.action-message.rejected {
+  color: red;
+}
+  
+.offer-card-notch {
+  position: absolute;
+  top: 7.5px; /* Ajusta la posición superior para el notch */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px; /* Aumenta el ancho para el notch */
+  height: 15px; /* Aumenta la altura para el notch */
+  background: #333;
+  border-radius: 15px 15px 0 0; /* Ajusta el border-radius para el notch */
+}
+

@@ -1,0 +1,40 @@
+.profile-card-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    background-color: #f0f0f0; /* Cambia el color de fondo según tus preferencias */
+  }
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 15px; /* Borde redondeado para un aspecto de tarjeta */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Sombra para dar profundidad */
+  padding: 20px;
+  margin-bottom: 1rem;
+  width: 300px; /* Ancho de la tarjeta */
+  min-height: 400px; /* Altura mínima de la tarjeta */
+  transition: transform .2s; /* Animación al pasar el mouse */
+  flex: 0 0 auto; /* Asegura que las tarjetas no se estiren */
+  margin: 1em; /* Agrega un poco de espacio alrededor de las tarjetas */
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .profile-card-inner {
+    padding: 20px;
+  }
+  
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .profile-details {
+    margin-top: 10px;
+  }
+  
+  /* Agrega más estilos según tus preferencias */
+  
